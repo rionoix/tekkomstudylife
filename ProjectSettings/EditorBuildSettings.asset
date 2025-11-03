@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ruang kelas.unity
+    path: Assets/scenes/menu.unity
+    guid: 71e6561dcd32bab499958e6cd99fd514
+  - enabled: 1
+    path: Assets/scenes/collect kelas.unity
+    guid: 2cc839baa1eddff49a5ba74178c53239
+  - enabled: 1
+    path: Assets/scenes/gameplay.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 40af389b0ce3df34b80f7b7406587815
+guid: 0d04a5e90a33ab248b011857573cf033
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 42592988170686629
-    second: layar untuk infocus putih (1)_0
+      213: 4506192880828843323
+    second: Kursi 5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: layar untuk infocus putih (1)_0
+      name: Kursi 5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3000
-        height: 6000
+        x: 214
+        y: 281
+        width: 512
+        height: 545
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a016d9d812579000800000000000000
-      internalID: 42592988170686629
+      spriteID: b35823fdc86398e30800000000000000
+      internalID: 4506192880828843323
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      layar untuk infocus putih (1)_0: 42592988170686629
+      Kursi 5_0: 4506192880828843323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
