@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: f263b0501d9e1ea4297f9ca01d039f79
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3968500273593144135
+    second: banner sister_0
+  - first:
+      213: 8700983903375107851
+    second: banner sister_1
+  - first:
+      213: 7189117151696173688
+    second: banner sister_2
+  - first:
+      213: -2157852958975411492
+    second: banner sister_3
+  - first:
+      213: -5241201873198780763
+    second: banner sister_4
+  - first:
+      213: 5105928536539695342
+    second: banner sister_5
+  - first:
+      213: 4950128535255649065
+    second: banner sister_6
+  - first:
+      213: -3071891098112734877
+    second: banner sister_7
+  - first:
+      213: -780362020406239680
+    second: banner sister_8
+  - first:
+      213: 959734389127234145
+    second: banner sister_9
+  - first:
+      213: 8911036354911895435
+    second: banner sister_10
+  - first:
+      213: -2111109626337457297
+    second: banner sister_11
+  - first:
+      213: 3650700653725966132
+    second: banner sister_12
+  - first:
+      213: 4645741831836447142
+    second: banner sister_13
+  - first:
+      213: -245891221810728195
+    second: banner sister_14
+  - first:
+      213: -8221178659723268754
+    second: banner sister_15
+  - first:
+      213: -2499254966243351410
+    second: banner sister_16
+  - first:
+      213: -7780232971830812383
+    second: banner sister_17
+  - first:
+      213: 1273368298519922869
+    second: banner sister_18
+  - first:
+      213: 4230002129569207052
+    second: banner sister_19
+  - first:
+      213: -4364767216682309204
+    second: banner sister_20
+  - first:
+      213: 4868509330272675531
+    second: banner sister_21
+  - first:
+      213: -8908230849254769870
+    second: banner sister_22
+  - first:
+      213: 7286064510839956367
+    second: banner sister_23
+  - first:
+      213: -8353286294692476020
+    second: banner sister_24
+  - first:
+      213: -1199667956073309787
+    second: banner sister_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: banner sister_0
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1120
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7435f8a09f1f21730800000000000000
+      internalID: 3968500273593144135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1120
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07a015a2ca10c870800000000000000
+      internalID: 8700983903375107851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_2
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1120
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ab48bb5ffd4c360800000000000000
+      internalID: 7189117151696173688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1120
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdabeb6aa24cd02e0800000000000000
+      internalID: -2157852958975411492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_4
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1118
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aeefd75aa28347b0800000000000000
+      internalID: -5241201873198780763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_5
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1118
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee88afc93f6ebd640800000000000000
+      internalID: 5105928536539695342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_6
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1120
+        width: 25
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b00780da362b440800000000000000
+      internalID: 4950128535255649065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_7
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1118
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3694e4462537e55d0800000000000000
+      internalID: -3071891098112734877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_8
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1120
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04eda7180e89b25f0800000000000000
+      internalID: -780362020406239680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_9
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1120
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162c7ae8759a15d00800000000000000
+      internalID: 959734389127234145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_10
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1120
+        width: 108
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f7d132a5c5aab70800000000000000
+      internalID: 8911036354911895435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_11
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 977
+        width: 69
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b8f30eaf4d3b2e0800000000000000
+      internalID: -2111109626337457297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_12
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 977
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f5f9ef6e4e9a230800000000000000
+      internalID: 3650700653725966132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_13
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 977
+        width: 81
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1b8c4f49df87040800000000000000
+      internalID: 4645741831836447142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_14
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 977
+        width: 69
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2b59e8c3b669cf0800000000000000
+      internalID: -245891221810728195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_15
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 977
+        width: 100
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d2c20119188ed80800000000000000
+      internalID: -8221178659723268754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_16
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 977
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e842fed89dcd05dd0800000000000000
+      internalID: -2499254966243351410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_17
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 977
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1212e34655f070490800000000000000
+      internalID: -7780232971830812383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_18
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 977
+        width: 108
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8068d88b9eba110800000000000000
+      internalID: 1273368298519922869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_19
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 814
+        width: 83
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c035e1c768cf3ba30800000000000000
+      internalID: 4230002129569207052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_20
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 811
+        width: 90
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9616a875b3d63c0800000000000000
+      internalID: -4364767216682309204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_21
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 814
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6e390017b609340800000000000000
+      internalID: 4868509330272675531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_22
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 814
+        width: 111
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b3efc8d3b9f5480800000000000000
+      internalID: -8908230849254769870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_23
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 811
+        width: 116
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f832233c11d4d1560800000000000000
+      internalID: 7286064510839956367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_24
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 814
+        width: 67
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b47b16f5a231c80800000000000000
+      internalID: -8353286294692476020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner sister_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 814
+        width: 117
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9d4dd995ce95fe0800000000000000
+      internalID: -1199667956073309787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      banner sister_0: 3968500273593144135
+      banner sister_1: 8700983903375107851
+      banner sister_10: 8911036354911895435
+      banner sister_11: -2111109626337457297
+      banner sister_12: 3650700653725966132
+      banner sister_13: 4645741831836447142
+      banner sister_14: -245891221810728195
+      banner sister_15: -8221178659723268754
+      banner sister_16: -2499254966243351410
+      banner sister_17: -7780232971830812383
+      banner sister_18: 1273368298519922869
+      banner sister_19: 4230002129569207052
+      banner sister_2: 7189117151696173688
+      banner sister_20: -4364767216682309204
+      banner sister_21: 4868509330272675531
+      banner sister_22: -8908230849254769870
+      banner sister_23: 7286064510839956367
+      banner sister_24: -8353286294692476020
+      banner sister_25: -1199667956073309787
+      banner sister_3: -2157852958975411492
+      banner sister_4: -5241201873198780763
+      banner sister_5: 5105928536539695342
+      banner sister_6: 4950128535255649065
+      banner sister_7: -3071891098112734877
+      banner sister_8: -780362020406239680
+      banner sister_9: 959734389127234145
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

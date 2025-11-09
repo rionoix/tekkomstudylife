@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1eda5e92580191d4ba1c27fcd86d1bc3
+guid: b85c308475f8cdf4f8f0d0ca29799f57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3662505849787054124
-    second: Start (1)_0
+      213: -8713230052396155371
+    second: einstein_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Start (1)_0
+      name: einstein_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 199
+        x: 136
+        y: 147
+        width: 1160
+        height: 1772
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d707ab955a2c2dc0800000000000000
-      internalID: -3662505849787054124
+      spriteID: 51e3ba89e63641780800000000000000
+      internalID: -8713230052396155371
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Start (1)_0: -3662505849787054124
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

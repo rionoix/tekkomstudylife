@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d7af4c1bd2709f54682b5d088ba2cdb0
+guid: dacec5fa1ec1ac549a689d50e3308b24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1151905075149521417
-    second: Shop_0
+      213: -51304951499360328
+    second: kursi guru_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shop_0
+      name: kursi guru_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 150
-        height: 150
+        y: 44
+        width: 599
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fd3ebcef6c9300f0800000000000000
-      internalID: -1151905075149521417
+      spriteID: 8b779ae1b6ab94ff0800000000000000
+      internalID: -51304951499360328
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Shop_0: -1151905075149521417
+      kursi guru_0: -51304951499360328
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

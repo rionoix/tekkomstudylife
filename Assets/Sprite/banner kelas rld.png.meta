@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: c0c57a86510097346b5f3a1b485f732e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3389360352328920662
+    second: banner kelas rld_0
+  - first:
+      213: -702561792456137748
+    second: banner kelas rld_1
+  - first:
+      213: -3538166807353620260
+    second: banner kelas rld_2
+  - first:
+      213: 4853064639553998357
+    second: banner kelas rld_3
+  - first:
+      213: 3053524370755007556
+    second: banner kelas rld_4
+  - first:
+      213: 2748711958120680736
+    second: banner kelas rld_5
+  - first:
+      213: -6084726351490111006
+    second: banner kelas rld_6
+  - first:
+      213: -389997524078448627
+    second: banner kelas rld_7
+  - first:
+      213: -5677269374149684723
+    second: banner kelas rld_8
+  - first:
+      213: 2272485833650912713
+    second: banner kelas rld_9
+  - first:
+      213: 7366684980871976874
+    second: banner kelas rld_10
+  - first:
+      213: -1779583436400607687
+    second: banner kelas rld_11
+  - first:
+      213: -3981885773904024005
+    second: banner kelas rld_12
+  - first:
+      213: 5533461048759756648
+    second: banner kelas rld_13
+  - first:
+      213: 214333460805497272
+    second: banner kelas rld_14
+  - first:
+      213: 961602262053485896
+    second: banner kelas rld_15
+  - first:
+      213: 2147982197181730688
+    second: banner kelas rld_16
+  - first:
+      213: 8001855426714284887
+    second: banner kelas rld_17
+  - first:
+      213: 6812778327908195888
+    second: banner kelas rld_18
+  - first:
+      213: 7592012241502544682
+    second: banner kelas rld_19
+  - first:
+      213: -9074930889963109726
+    second: banner kelas rld_20
+  - first:
+      213: -4086271169908907174
+    second: banner kelas rld_21
+  - first:
+      213: -137484926311788135
+    second: banner kelas rld_22
+  - first:
+      213: 4799101208786554181
+    second: banner kelas rld_23
+  - first:
+      213: 5610884607067997024
+    second: banner kelas rld_24
+  - first:
+      213: -8326059881514322840
+    second: banner kelas rld_25
+  - first:
+      213: -8020999281614088830
+    second: banner kelas rld_26
+  - first:
+      213: 2745193416772248681
+    second: banner kelas rld_27
+  - first:
+      213: -6700318862914676491
+    second: banner kelas rld_28
+  - first:
+      213: -1794003355950783434
+    second: banner kelas rld_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: banner kelas rld_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1120
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa154a797b296f0d0800000000000000
+      internalID: -3389360352328920662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1120
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3e3e7a5cfff36f0800000000000000
+      internalID: -702561792456137748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1120
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd80c93e808e5eec0800000000000000
+      internalID: -3538166807353620260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1120
+        width: 100
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e00a8b39c895340800000000000000
+      internalID: 4853064639553998357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_4
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1118
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444b9d7ac3c406a20800000000000000
+      internalID: 3053524370755007556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_5
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1120
+        width: 177
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02dc6ad66f2652620800000000000000
+      internalID: 2748711958120680736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_6
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1120
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e929ff1f95be8ba0800000000000000
+      internalID: -6084726351490111006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_7
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1118
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00b5027153769af0800000000000000
+      internalID: -389997524078448627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_8
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 1120
+        width: 186
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d029a9b65994631b0800000000000000
+      internalID: -5677269374149684723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_9
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 1120
+        width: 25
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdbed753dd798f10800000000000000
+      internalID: 2272485833650912713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_10
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1120
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa75411b5f8bb3660800000000000000
+      internalID: 7366684980871976874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_11
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 1120
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e3c211b46ad47e0800000000000000
+      internalID: -1779583436400607687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_12
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 977
+        width: 58
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ee44e4cff7db8c0800000000000000
+      internalID: -3981885773904024005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 975
+        width: 98
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86729cd918dcacc40800000000000000
+      internalID: 5533461048759756648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_14
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 975
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1bac2a52779f200800000000000000
+      internalID: 214333460805497272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_15
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 977
+        width: 24
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84df8ec992c485d00800000000000000
+      internalID: 961602262053485896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_16
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 977
+        width: 185
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f41e68d6a2fcd10800000000000000
+      internalID: 2147982197181730688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_17
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 977
+        width: 78
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753365d6d1d4c0f60800000000000000
+      internalID: 8001855426714284887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_18
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 977
+        width: 25
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e92782bc9db8e50800000000000000
+      internalID: 6812778327908195888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_19
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 975
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a232d21d8ee3c5960800000000000000
+      internalID: 7592012241502544682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_20
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 977
+        width: 25
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a28786cf6e5f0280800000000000000
+      internalID: -9074930889963109726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_21
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 977
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53e8ad5506aa47c0800000000000000
+      internalID: -4086271169908907174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_22
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 977
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991173d103e871ef0800000000000000
+      internalID: -137484926311788135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_23
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 977
+        width: 58
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dced66f15d99240800000000000000
+      internalID: 4799101208786554181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_24
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 814
+        width: 82
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063cef782dddddd40800000000000000
+      internalID: 5610884607067997024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_25
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 811
+        width: 91
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86435bfa6a4e37c80800000000000000
+      internalID: -8326059881514322840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_26
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 814
+        width: 106
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2859ab386afafa090800000000000000
+      internalID: -8020999281614088830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_27
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 814
+        width: 100
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964637e2ed2e81620800000000000000
+      internalID: 2745193416772248681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_28
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 814
+        width: 67
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f81f167e7fa303a0800000000000000
+      internalID: -6700318862914676491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner kelas rld_29
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 814
+        width: 224
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634e1bae37b6a17e0800000000000000
+      internalID: -1794003355950783434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      banner kelas rld_0: -3389360352328920662
+      banner kelas rld_1: -702561792456137748
+      banner kelas rld_10: 7366684980871976874
+      banner kelas rld_11: -1779583436400607687
+      banner kelas rld_12: -3981885773904024005
+      banner kelas rld_13: 5533461048759756648
+      banner kelas rld_14: 214333460805497272
+      banner kelas rld_15: 961602262053485896
+      banner kelas rld_16: 2147982197181730688
+      banner kelas rld_17: 8001855426714284887
+      banner kelas rld_18: 6812778327908195888
+      banner kelas rld_19: 7592012241502544682
+      banner kelas rld_2: -3538166807353620260
+      banner kelas rld_20: -9074930889963109726
+      banner kelas rld_21: -4086271169908907174
+      banner kelas rld_22: -137484926311788135
+      banner kelas rld_23: 4799101208786554181
+      banner kelas rld_24: 5610884607067997024
+      banner kelas rld_25: -8326059881514322840
+      banner kelas rld_26: -8020999281614088830
+      banner kelas rld_27: 2745193416772248681
+      banner kelas rld_28: -6700318862914676491
+      banner kelas rld_29: -1794003355950783434
+      banner kelas rld_3: 4853064639553998357
+      banner kelas rld_4: 3053524370755007556
+      banner kelas rld_5: 2748711958120680736
+      banner kelas rld_6: -6084726351490111006
+      banner kelas rld_7: -389997524078448627
+      banner kelas rld_8: -5677269374149684723
+      banner kelas rld_9: 2272485833650912713
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: fc558b36c844bbe45aae5a4f2968eede
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7940743925327288794
+    second: banner petekkom_0
+  - first:
+      213: -5182092042116638659
+    second: banner petekkom_1
+  - first:
+      213: 907058202590731442
+    second: banner petekkom_2
+  - first:
+      213: 733154682610550397
+    second: banner petekkom_3
+  - first:
+      213: 9021346058139098042
+    second: banner petekkom_4
+  - first:
+      213: 4975223737774410705
+    second: banner petekkom_5
+  - first:
+      213: 2486425615353881818
+    second: banner petekkom_6
+  - first:
+      213: 7118070345346481707
+    second: banner petekkom_7
+  - first:
+      213: 6969972152988514884
+    second: banner petekkom_8
+  - first:
+      213: -4954745278684086472
+    second: banner petekkom_9
+  - first:
+      213: 4022971313231521548
+    second: banner petekkom_10
+  - first:
+      213: 8316671990022570408
+    second: banner petekkom_11
+  - first:
+      213: -3526451521345438614
+    second: banner petekkom_12
+  - first:
+      213: 5078931737926902189
+    second: banner petekkom_13
+  - first:
+      213: -8319626785617592643
+    second: banner petekkom_14
+  - first:
+      213: -7574904066963730741
+    second: banner petekkom_15
+  - first:
+      213: 5191560041180974312
+    second: banner petekkom_16
+  - first:
+      213: -8712573445235117208
+    second: banner petekkom_17
+  - first:
+      213: -5439469627355406400
+    second: banner petekkom_18
+  - first:
+      213: 6329880901481601682
+    second: banner petekkom_19
+  - first:
+      213: 6242211193266516359
+    second: banner petekkom_20
+  - first:
+      213: -4154204055262689029
+    second: banner petekkom_21
+  - first:
+      213: 694981453267176719
+    second: banner petekkom_22
+  - first:
+      213: 9178767501462711636
+    second: banner petekkom_23
+  - first:
+      213: -9198711929353550487
+    second: banner petekkom_24
+  - first:
+      213: -6963186327266898699
+    second: banner petekkom_25
+  - first:
+      213: 2417706456508869153
+    second: banner petekkom_26
+  - first:
+      213: -8548839988319618818
+    second: banner petekkom_27
+  - first:
+      213: 3067416666779604874
+    second: banner petekkom_28
+  - first:
+      213: -1490343133418606505
+    second: banner petekkom_29
+  - first:
+      213: 2981297911081075230
+    second: banner petekkom_30
+  - first:
+      213: -2646770984655496758
+    second: banner petekkom_31
+  - first:
+      213: -1158677934406762806
+    second: banner petekkom_32
+  - first:
+      213: -7265231729830431635
+    second: banner petekkom_33
+  - first:
+      213: -1834670225340303925
+    second: banner petekkom_34
+  - first:
+      213: -57201334809062215
+    second: banner petekkom_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: banner petekkom_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1101
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626a686c87fccc190800000000000000
+      internalID: -7940743925327288794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1101
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38524c5eb28518b0800000000000000
+      internalID: -5182092042116638659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_2
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1101
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc560421a4869c00800000000000000
+      internalID: 907058202590731442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1101
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d768a66ac40bc2a00800000000000000
+      internalID: 733154682610550397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1099
+        width: 75
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb50475172423d70800000000000000
+      internalID: 9021346058139098042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1101
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db822031ab8b0540800000000000000
+      internalID: 4975223737774410705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_6
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1101
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4a99b6cee818220800000000000000
+      internalID: 2486425615353881818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_7
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1101
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e7e94144778c260800000000000000
+      internalID: 7118070345346481707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_8
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1099
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44abe31aeb05ab060800000000000000
+      internalID: 6969972152988514884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_9
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1101
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fbd7f9b653d3bb0800000000000000
+      internalID: -4954745278684086472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_10
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1101
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0760c2481774d730800000000000000
+      internalID: 4022971313231521548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_11
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1101
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a18cbe7c11ca6370800000000000000
+      internalID: 8316671990022570408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_12
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 1101
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6cb19876078f0fc0800000000000000
+      internalID: -3526451521345438614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1101
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1279d918dfb7640800000000000000
+      internalID: 5078931737926902189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_14
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1101
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe307b848fba8c80800000000000000
+      internalID: -8319626785617592643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 958
+        width: 69
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce07f872e880e690800000000000000
+      internalID: -7574904066963730741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_16
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 958
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec44b4f9502c0840800000000000000
+      internalID: 5191560041180974312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 958
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863724ddc98b61780800000000000000
+      internalID: -8712573445235117208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_18
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 958
+        width: 84
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf54f6813f1384b0800000000000000
+      internalID: -5439469627355406400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_19
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 958
+        width: 24
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a175b842148d750800000000000000
+      internalID: 6329880901481601682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_20
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 958
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7813e93f10ac0a650800000000000000
+      internalID: 6242211193266516359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_21
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 958
+        width: 90
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf88491fb6d4956c0800000000000000
+      internalID: -4154204055262689029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_22
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 956
+        width: 99
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d897713f115a900800000000000000
+      internalID: 694981453267176719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_23
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 958
+        width: 108
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45da5905968816f70800000000000000
+      internalID: 9178767501462711636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_24
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 958
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965cbb3bc3c975080800000000000000
+      internalID: -9198711929353550487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_25
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 956
+        width: 76
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc466a8deacd5f90800000000000000
+      internalID: -6963186327266898699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_26
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 958
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a216f663b6d8120800000000000000
+      internalID: 2417706456508869153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_27
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 958
+        width: 57
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8fd86035b6c5980800000000000000
+      internalID: -8548839988319618818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_28
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 958
+        width: 81
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87d281e437a19a20800000000000000
+      internalID: 3067416666779604874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_29
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 795
+        width: 83
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750342bf0dc315be0800000000000000
+      internalID: -1490343133418606505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_30
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 792
+        width: 91
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e120a9f87a2bf5920800000000000000
+      internalID: 2981297911081075230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_31
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 795
+        width: 105
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac95cc900d7c44bd0800000000000000
+      internalID: -2646770984655496758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_32
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 795
+        width: 96
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acef99ebe8c8befe0800000000000000
+      internalID: -1158677934406762806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_33
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 795
+        width: 28
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d647f8c0c36bc2b90800000000000000
+      internalID: -7265231729830431635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_34
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 795
+        width: 104
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5fa9a8621f986e0800000000000000
+      internalID: -1834670225340303925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner petekkom_35
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 795
+        width: 219
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4170660b7c43ff0800000000000000
+      internalID: -57201334809062215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      banner petekkom_0: -7940743925327288794
+      banner petekkom_1: -5182092042116638659
+      banner petekkom_10: 4022971313231521548
+      banner petekkom_11: 8316671990022570408
+      banner petekkom_12: -3526451521345438614
+      banner petekkom_13: 5078931737926902189
+      banner petekkom_14: -8319626785617592643
+      banner petekkom_15: -7574904066963730741
+      banner petekkom_16: 5191560041180974312
+      banner petekkom_17: -8712573445235117208
+      banner petekkom_18: -5439469627355406400
+      banner petekkom_19: 6329880901481601682
+      banner petekkom_2: 907058202590731442
+      banner petekkom_20: 6242211193266516359
+      banner petekkom_21: -4154204055262689029
+      banner petekkom_22: 694981453267176719
+      banner petekkom_23: 9178767501462711636
+      banner petekkom_24: -9198711929353550487
+      banner petekkom_25: -6963186327266898699
+      banner petekkom_26: 2417706456508869153
+      banner petekkom_27: -8548839988319618818
+      banner petekkom_28: 3067416666779604874
+      banner petekkom_29: -1490343133418606505
+      banner petekkom_3: 733154682610550397
+      banner petekkom_30: 2981297911081075230
+      banner petekkom_31: -2646770984655496758
+      banner petekkom_32: -1158677934406762806
+      banner petekkom_33: -7265231729830431635
+      banner petekkom_34: -1834670225340303925
+      banner petekkom_35: -57201334809062215
+      banner petekkom_4: 9021346058139098042
+      banner petekkom_5: 4975223737774410705
+      banner petekkom_6: 2486425615353881818
+      banner petekkom_7: 7118070345346481707
+      banner petekkom_8: 6969972152988514884
+      banner petekkom_9: -4954745278684086472
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
