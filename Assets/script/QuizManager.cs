@@ -13,10 +13,16 @@ public struct Question
 
 public class QuizManager : MonoBehaviour
 {
+    [Header("Panels")]
+    public GameObject introPanel;
+    public GameObject quizPanel;
+    public GameObject endPanel;
+
     [Header("UI Elements")]
     public TextMeshProUGUI questionText;
     public Button[] answerButtons;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI endText;
 
     [Header("Quiz Data")]
     public Question[] questions;
@@ -25,6 +31,22 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
+        // Awal game: tampilkan panel intro
+        introPanel.SetActive(true);
+        quizPanel.SetActive(false);
+        endPanel.SetActive(false);
+    }
+
+    // Dipanggil saat tombol PLAY ditekan
+    public void StartQuiz()
+    {
+        score = 0;
+        currentQuestionIndex = 0;
+
+        introPanel.SetActive(false);
+        endPanel.SetActive(false);
+        quizPanel.SetActive(true);
+
         ShowQuestion();
     }
 
@@ -41,7 +63,11 @@ public class QuizManager : MonoBehaviour
                 int index = i;
                 answerButtons[i].onClick.RemoveAllListeners();
                 answerButtons[i].onClick.AddListener(() => CheckAnswer(index));
+                answerButtons[i].gameObject.SetActive(true);
             }
+
+            if (scoreText != null)
+                scoreText.text = "Skor: " + score;
         }
         else
         {
@@ -52,9 +78,7 @@ public class QuizManager : MonoBehaviour
     void CheckAnswer(int index)
     {
         if (index == questions[currentQuestionIndex].correctAnswerIndex)
-        {
             score++;
-        }
 
         currentQuestionIndex++;
         ShowQuestion();
@@ -62,12 +86,23 @@ public class QuizManager : MonoBehaviour
 
     void EndQuiz()
     {
-        questionText.text = "Quiz Selesai!\nNilai kamu: " + score + "/" + questions.Length;
-        foreach (Button btn in answerButtons)
-        {
-            btn.gameObject.SetActive(false);
-        }
+        quizPanel.SetActive(false);
+        endPanel.SetActive(true);
+
+        endText.text = "Quiz Selesai!\nNilai kamu: " + score + "/" + questions.Length;
         if (scoreText != null)
             scoreText.text = "Skor Akhir: " + score;
+    }
+
+    public void RestartQuiz()
+    {
+        StartQuiz();
+    }
+
+    public void BackToIntro()
+    {
+        introPanel.SetActive(true);
+        quizPanel.SetActive(false);
+        endPanel.SetActive(false);
     }
 }
