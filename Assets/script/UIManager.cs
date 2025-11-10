@@ -16,4 +16,14 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene("petekkom");
     }
 
+    public void kelasrld()
+    {
+        // Ganti "menu" dengan nama scene menu kamu
+        SceneManager.LoadScene("rld");
+    }public void kelassister()
+    {
+        // Ganti "menu" dengan nama scene menu kamu
+        SceneManager.LoadScene("sister");
+    }
+
 }
