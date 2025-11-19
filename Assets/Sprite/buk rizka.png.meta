@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      buk rizka_0: 3958715873172936085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
