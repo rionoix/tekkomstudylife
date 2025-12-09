@@ -9,6 +9,15 @@ public class RectTransformData
     public Vector2 sizeDelta = new Vector2(100, 100);
 }
 
+// --- KELAS BARU: Untuk menangani kombinasi majemuk di Inspector ---
+[System.Serializable]
+public class ValidCombination
+{
+    [Tooltip("Kombinasi tombol (True/False). Pastikan urutannya sesuai toggle.")]
+    public bool[] states = new bool[6];
+}
+// ------------------------------------------------------------------
+
 public enum LevelType
 {
     TogglePuzzle,
@@ -23,20 +32,26 @@ public class LevelData
     [Header("Tipe Level")]
     public LevelType levelType = LevelType.TogglePuzzle;
 
-    [Header("Gambar utama (berubah tiap level)")]
+    [Header("Gambar utama")]
     public Sprite levelImage;
     public RectTransformData levelImageLayout;
 
-    [Header("Sprite status (A -> B kalau kombinasi benar)")]
-    public Sprite statusSpriteA;
-    public Sprite statusSpriteB;
+    [Header("Sprite status")]
+    public Sprite statusSpriteA; // Belum benar
+    public Sprite statusSpriteB; // Benar
     public RectTransformData statusImageLayout;
 
-    [Header("Pengaturan toggle (untuk TogglePuzzle)")]
+    [Header("Pengaturan Toggle")]
     [Range(0, 6)]
-    public int toggleCount = 0;                 // 0–6 toggle
-    public bool[] targetCombination = new bool[6];           // hanya 0..toggleCount-1 yang dipakai
-    public RectTransformData[] toggleLayouts = new RectTransformData[6]; // layout masing2 toggle
+    public int toggleCount = 0;
+
+    // --- BAGIAN INI BERUBAH ---
+    [Header("Daftar Kombinasi Jawaban Benar")]
+    [Tooltip("Isi Element sebanyak kemungkinan jawaban benar.")]
+    public ValidCombination[] validCombinations; 
+    // ---------------------------
+
+    public RectTransformData[] toggleLayouts = new RectTransformData[6];
 
     [Header("Level selingan (TextOnly)")]
     [TextArea(2, 4)]
@@ -45,10 +60,15 @@ public class LevelData
 
 public class LevelManager : MonoBehaviour
 {
+    // --- EDITOR PREVIEW TOOLS ---
+    [Header("--- EDITOR PREVIEW TOOLS ---")]
+    public bool livePreview = true;
+    public int previewLevelIndex = 0;
+
     [Header("Referensi UI")]
     public Image levelImageUI;
     public Image statusImageUI;
-    public Toggle[] toggles;                    // isi 6 toggle di Inspector
+    public Toggle[] toggles; 
     public Button nextLevelButton;
     public TextMeshProUGUI intermissionTextUI;
 
@@ -59,67 +79,55 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        // Pasang listener otomatis agar toggle merespons klik
+        if (toggles != null)
+        {
+            foreach (var t in toggles)
+            {
+                if (t != null) 
+                    t.onValueChanged.AddListener(delegate { OnToggleChanged(); });
+            }
+        }
+
         LoadLevel(0);
     }
 
     public void LoadLevel(int index)
     {
-        if (index < 0 || index >= levels.Length)
-        {
-            Debug.LogError("Level index di luar range!");
-            return;
-        }
+        if (index < 0 || index >= levels.Length) return;
 
         currentLevelIndex = index;
         LevelData level = levels[currentLevelIndex];
 
-        // Reset tombol Next
         if (nextLevelButton != null)
             nextLevelButton.gameObject.SetActive(false);
 
-        // Pilih setup berdasarkan tipe level
         if (level.levelType == LevelType.TextOnly)
-        {
             SetupTextOnlyLevel(level);
-        }
-        else // TogglePuzzle
-        {
+        else 
             SetupTogglePuzzleLevel(level);
-        }
     }
 
-    // === TEXT ONLY LEVEL ===
     private void SetupTextOnlyLevel(LevelData level)
     {
-        // Matikan gambar & toggle
         if (levelImageUI != null) levelImageUI.gameObject.SetActive(false);
         if (statusImageUI != null) statusImageUI.gameObject.SetActive(false);
 
         if (toggles != null)
-        {
-            foreach (var t in toggles)
-            {
-                if (t != null)
-                    t.gameObject.SetActive(false);
-            }
-        }
+            foreach (var t in toggles) if (t != null) t.gameObject.SetActive(false);
 
-        // Tampilkan teks selingan
         if (intermissionTextUI != null)
         {
             intermissionTextUI.gameObject.SetActive(true);
             intermissionTextUI.text = level.intermissionText;
         }
 
-        // Tombol Next langsung ada
         if (nextLevelButton != null)
             nextLevelButton.gameObject.SetActive(true);
     }
 
-    // === TOGGLE PUZZLE LEVEL ===
     private void SetupTogglePuzzleLevel(LevelData level)
     {
-        // Aktifkan & atur gambar utama
         if (levelImageUI != null)
         {
             levelImageUI.gameObject.SetActive(true);
@@ -127,7 +135,6 @@ public class LevelManager : MonoBehaviour
             ApplyRect(levelImageUI.rectTransform, level.levelImageLayout);
         }
 
-        // Aktifkan & atur status image (pakai sprite A dulu)
         if (statusImageUI != null)
         {
             statusImageUI.gameObject.SetActive(true);
@@ -135,22 +142,19 @@ public class LevelManager : MonoBehaviour
             ApplyRect(statusImageUI.rectTransform, level.statusImageLayout);
         }
 
-        // Matikan teks selingan
         if (intermissionTextUI != null)
             intermissionTextUI.gameObject.SetActive(false);
 
-        // Atur toggle
         for (int i = 0; i < toggles.Length; i++)
         {
             bool aktif = i < level.toggleCount;
-
             if (toggles[i] == null) continue;
 
             toggles[i].gameObject.SetActive(aktif);
 
             if (aktif)
             {
-                toggles[i].isOn = false; // reset
+                if (Application.isPlaying) toggles[i].isOn = false; 
                 ApplyRect(toggles[i].transform as RectTransform, level.toggleLayouts[i]);
             }
         }
@@ -159,62 +163,100 @@ public class LevelManager : MonoBehaviour
     private void ApplyRect(RectTransform rt, RectTransformData data)
     {
         if (rt == null || data == null) return;
-
         rt.anchoredPosition = data.anchoredPosition;
         rt.sizeDelta = data.sizeDelta;
     }
 
-    // Dipanggil dari semua toggle (On Value Changed)
     public void OnToggleChanged()
     {
+        if (!Application.isPlaying) return; 
+
         LevelData level = levels[currentLevelIndex];
-        if (level.levelType != LevelType.TogglePuzzle)
-            return; // kalau lagi di level text, abaikan
+        if (level.levelType != LevelType.TogglePuzzle) return;
 
         CheckCombination();
     }
 
+    // --- LOGIKA PENGECEKAN BARU ---
     private void CheckCombination()
     {
         LevelData level = levels[currentLevelIndex];
+        
+        bool isMatched = false; // Penanda apakah ada salah satu kombinasi yang cocok
 
-        for (int i = 0; i < level.toggleCount; i++)
+        // 1. Cek apakah developer lupa mengisi kombinasi?
+        if (level.validCombinations == null || level.validCombinations.Length == 0)
         {
-            bool current = toggles[i].isOn;
-            bool target = level.targetCombination[i];
-
-            if (current != target)
+            // Kalau kosong, anggap saja salah (atau bisa kamu buat auto-win untuk debug)
+            isMatched = false;
+        }
+        else
+        {
+            // 2. Loop semua kemungkinan kombinasi yang benar (ValidCombination)
+            foreach (var combo in level.validCombinations)
             {
-                // kombinasi salah
-                if (statusImageUI != null)
-                    statusImageUI.sprite = level.statusSpriteA;
+                bool thisComboCorrect = true;
 
-                if (nextLevelButton != null)
-                    nextLevelButton.gameObject.SetActive(false);
+                // Cek setiap toggle untuk kombinasi INI
+                for (int i = 0; i < level.toggleCount; i++)
+                {
+                    // Pastikan array states cukup panjang untuk mencegah error
+                    if (i >= combo.states.Length) break;
 
-                return;
+                    bool currentToggleState = toggles[i].isOn;
+                    bool requiredState = combo.states[i];
+
+                    if (currentToggleState != requiredState)
+                    {
+                        thisComboCorrect = false;
+                        break; // Salah satu toggle salah di kombinasi ini, pindah ke kombinasi berikutnya
+                    }
+                }
+
+                // Jika kombinasi ini benar semua
+                if (thisComboCorrect)
+                {
+                    isMatched = true;
+                    break; // Sudah ketemu yang benar, stop pengecekan
+                }
             }
         }
 
-        // Kalau sampai sini, kombinasi benar
-        if (statusImageUI != null)
-            statusImageUI.sprite = level.statusSpriteB;
-
-        if (nextLevelButton != null)
-            nextLevelButton.gameObject.SetActive(true);
+        // 3. Tentukan hasil akhir (Menang / Kalah)
+        if (isMatched)
+        {
+            // Benar
+            if (statusImageUI != null) statusImageUI.sprite = level.statusSpriteB;
+            if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            // Salah
+            if (statusImageUI != null) statusImageUI.sprite = level.statusSpriteA;
+            if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(false);
+        }
     }
+    // ------------------------------
 
-    // Di-assign ke tombol Next Level
     public void OnNextLevelButton()
     {
         int nextIndex = currentLevelIndex + 1;
-
-        if (nextIndex >= levels.Length)
-        {
-            // misal balik ke level pertama; bisa kamu ganti sesuai kebutuhan
-            nextIndex = 0;
-        }
-
+        if (nextIndex >= levels.Length) nextIndex = 0;
         LoadLevel(nextIndex);
+    }
+
+    private void OnValidate()
+    {
+        if (!Application.isPlaying && livePreview) UpdateEditorPreview();
+    }
+
+    private void UpdateEditorPreview()
+    {
+        if (levels == null || levels.Length == 0) return;
+        previewLevelIndex = Mathf.Clamp(previewLevelIndex, 0, levels.Length - 1);
+        LevelData levelData = levels[previewLevelIndex];
+
+        if (levelData.levelType == LevelType.TextOnly) SetupTextOnlyLevel(levelData);
+        else SetupTogglePuzzleLevel(levelData);
     }
 }
