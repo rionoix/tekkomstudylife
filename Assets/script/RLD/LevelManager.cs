@@ -9,14 +9,12 @@ public class RectTransformData
     public Vector2 sizeDelta = new Vector2(100, 100);
 }
 
-// --- KELAS BARU: Untuk menangani kombinasi majemuk di Inspector ---
 [System.Serializable]
 public class ValidCombination
 {
     [Tooltip("Kombinasi tombol (True/False). Pastikan urutannya sesuai toggle.")]
     public bool[] states = new bool[6];
 }
-// ------------------------------------------------------------------
 
 public enum LevelType
 {
@@ -45,11 +43,8 @@ public class LevelData
     [Range(0, 6)]
     public int toggleCount = 0;
 
-    // --- BAGIAN INI BERUBAH ---
     [Header("Daftar Kombinasi Jawaban Benar")]
-    [Tooltip("Isi Element sebanyak kemungkinan jawaban benar.")]
     public ValidCombination[] validCombinations; 
-    // ---------------------------
 
     public RectTransformData[] toggleLayouts = new RectTransformData[6];
 
@@ -60,17 +55,23 @@ public class LevelData
 
 public class LevelManager : MonoBehaviour
 {
-    // --- EDITOR PREVIEW TOOLS ---
     [Header("--- EDITOR PREVIEW TOOLS ---")]
     public bool livePreview = true;
     public int previewLevelIndex = 0;
 
-    [Header("Referensi UI")]
+    [Header("Referensi UI Utama")]
     public Image levelImageUI;
     public Image statusImageUI;
     public Toggle[] toggles; 
-    public Button nextLevelButton;
     public TextMeshProUGUI intermissionTextUI;
+    
+    [Header("Tombol Navigasi")]
+    public Button nextLevelButton; // Tombol Next biasa
+
+    [Header("Tombol End Game (Muncul saat tamat)")]
+    public GameObject endGamePanel;   // Panel pembungkus tombol tamat (opsional)
+    public Button restartButton;      // Tombol Ulang dari 0
+    public Button startLevel10Button; // Tombol Mulai Level 10
 
     [Header("Data Level")]
     public LevelData[] levels;
@@ -79,7 +80,14 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        // Pasang listener otomatis agar toggle merespons klik
+        // Setup Listener Tombol End Game secara otomatis
+        if (restartButton != null) 
+            restartButton.onClick.AddListener(() => LoadLevel(0));
+
+        if (startLevel10Button != null) 
+            startLevel10Button.onClick.AddListener(() => LoadLevel(10)); // Akan error jika level < 11, tapi aman ada cek di LoadLevel
+
+        // Setup Listener Toggle
         if (toggles != null)
         {
             foreach (var t in toggles)
@@ -94,14 +102,23 @@ public class LevelManager : MonoBehaviour
 
     public void LoadLevel(int index)
     {
-        if (index < 0 || index >= levels.Length) return;
+        // Validasi Index
+        if (index < 0 || index >= levels.Length) 
+        {
+            Debug.LogError($"Level {index} tidak ditemukan! Pastikan jumlah level di inspector cukup.");
+            return;
+        }
 
         currentLevelIndex = index;
         LevelData level = levels[currentLevelIndex];
 
-        if (nextLevelButton != null)
-            nextLevelButton.gameObject.SetActive(false);
+        // 1. Reset Semua Tombol Navigasi (Sembunyikan semua dulu)
+        if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(false);
+        if (endGamePanel != null) endGamePanel.SetActive(false);
+        if (restartButton != null) restartButton.gameObject.SetActive(false);
+        if (startLevel10Button != null) startLevel10Button.gameObject.SetActive(false);
 
+        // 2. Setup Tampilan Level
         if (level.levelType == LevelType.TextOnly)
             SetupTextOnlyLevel(level);
         else 
@@ -122,8 +139,8 @@ public class LevelManager : MonoBehaviour
             intermissionTextUI.text = level.intermissionText;
         }
 
-        if (nextLevelButton != null)
-            nextLevelButton.gameObject.SetActive(true);
+        // Kalau text only, langsung cek apakah ini level terakhir?
+        CheckLevelComplete(true);
     }
 
     private void SetupTogglePuzzleLevel(LevelData level)
@@ -177,72 +194,84 @@ public class LevelManager : MonoBehaviour
         CheckCombination();
     }
 
-    // --- LOGIKA PENGECEKAN BARU ---
     private void CheckCombination()
     {
         LevelData level = levels[currentLevelIndex];
-        
-        bool isMatched = false; // Penanda apakah ada salah satu kombinasi yang cocok
+        bool isMatched = false;
 
-        // 1. Cek apakah developer lupa mengisi kombinasi?
-        if (level.validCombinations == null || level.validCombinations.Length == 0)
+        if (level.validCombinations != null)
         {
-            // Kalau kosong, anggap saja salah (atau bisa kamu buat auto-win untuk debug)
-            isMatched = false;
-        }
-        else
-        {
-            // 2. Loop semua kemungkinan kombinasi yang benar (ValidCombination)
             foreach (var combo in level.validCombinations)
             {
                 bool thisComboCorrect = true;
-
-                // Cek setiap toggle untuk kombinasi INI
                 for (int i = 0; i < level.toggleCount; i++)
                 {
-                    // Pastikan array states cukup panjang untuk mencegah error
                     if (i >= combo.states.Length) break;
-
-                    bool currentToggleState = toggles[i].isOn;
-                    bool requiredState = combo.states[i];
-
-                    if (currentToggleState != requiredState)
+                    if (toggles[i].isOn != combo.states[i])
                     {
                         thisComboCorrect = false;
-                        break; // Salah satu toggle salah di kombinasi ini, pindah ke kombinasi berikutnya
+                        break; 
                     }
                 }
-
-                // Jika kombinasi ini benar semua
                 if (thisComboCorrect)
                 {
                     isMatched = true;
-                    break; // Sudah ketemu yang benar, stop pengecekan
+                    break; 
                 }
             }
         }
 
-        // 3. Tentukan hasil akhir (Menang / Kalah)
-        if (isMatched)
+        // Tampilkan feedback visual
+        if (statusImageUI != null)
+            statusImageUI.sprite = isMatched ? level.statusSpriteB : level.statusSpriteA;
+
+        // Panggil logika tombol
+        CheckLevelComplete(isMatched);
+    }
+
+    // --- LOGIKA MENAMPILKAN TOMBOL (NEXT vs END GAME) ---
+    private void CheckLevelComplete(bool isComplete)
+    {
+        // Jika belum selesai, sembunyikan semua tombol lanjut
+        if (!isComplete)
         {
-            // Benar
-            if (statusImageUI != null) statusImageUI.sprite = level.statusSpriteB;
-            if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(true);
+            if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(false);
+            if (endGamePanel != null) endGamePanel.SetActive(false);
+            // Tombol restart/level10 dimatikan via endGamePanel atau individual
+            if (restartButton != null) restartButton.gameObject.SetActive(false);
+            if (startLevel10Button != null) startLevel10Button.gameObject.SetActive(false);
+            return;
+        }
+
+        // JIKA SELESAI (BENAR):
+        // Cek apakah ini level TERAKHIR?
+        bool isLastLevel = (currentLevelIndex >= levels.Length - 1);
+
+        if (isLastLevel)
+        {
+            // Tampilkan UI Tamat
+            if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(false); // Next hilang
+            
+            if (endGamePanel != null) endGamePanel.SetActive(true); // Panel muncul
+            if (restartButton != null) restartButton.gameObject.SetActive(true);
+            if (startLevel10Button != null) startLevel10Button.gameObject.SetActive(true);
         }
         else
         {
-            // Salah
-            if (statusImageUI != null) statusImageUI.sprite = level.statusSpriteA;
-            if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(false);
+            // Level biasa, tampilkan Next
+            if (nextLevelButton != null) nextLevelButton.gameObject.SetActive(true);
+            
+            if (endGamePanel != null) endGamePanel.SetActive(false); // Panel hilang
+            if (restartButton != null) restartButton.gameObject.SetActive(false);
+            if (startLevel10Button != null) startLevel10Button.gameObject.SetActive(false);
         }
     }
-    // ------------------------------
+    // ---------------------------------------------------
 
     public void OnNextLevelButton()
     {
-        int nextIndex = currentLevelIndex + 1;
-        if (nextIndex >= levels.Length) nextIndex = 0;
-        LoadLevel(nextIndex);
+        // Tombol Next hanya muncul jika bukan level terakhir, jadi aman increment
+        LoadLevel(currentLevelIndex + 1);
     }
 
     private void OnValidate()
