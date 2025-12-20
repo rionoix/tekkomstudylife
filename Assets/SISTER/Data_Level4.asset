@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f36432e9003d3f4bb1c434830909f98, type: 3}
+  m_Name: Data_Level4
+  m_EditorClassIdentifier: Assembly-CSharp::SisterLevelData
+  isTextOnly: 0
+  systemDescription: 
+  levelPrefab: {fileID: 0}
+  correctConnections:
+  - pinID_A: 301
+    pinID_B: 311
+  - pinID_A: 303
+    pinID_B: 312
+  - pinID_A: 306
+    pinID_B: 313
+  - pinID_A: 302
+    pinID_B: 321
+  - pinID_A: 304
+    pinID_B: 322
+  - pinID_A: 307
+    pinID_B: 323
+  - pinID_A: 302
+    pinID_B: 324
+  - pinID_A: 325
+    pinID_B: 331
+  - pinID_A: 305
+    pinID_B: 332

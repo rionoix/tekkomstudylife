@@ -8,7 +8,7 @@ public class LineManager : MonoBehaviour
     
     private PinPoint currentStartPin;
     private GameObject currentLineObj;
-    private LineRenderer currentLineRenderer; // Tambahan untuk akses posisi garis
+    private LineRenderer currentLineRenderer; 
     
     public List<ConnectionPair> currentUserConnections = new List<ConnectionPair>();
 
@@ -17,14 +17,18 @@ public class LineManager : MonoBehaviour
         currentStartPin = startPin;
         currentLineObj = Instantiate(linePrefab, lineParent);
         
-        // Ambil komponen LineRenderer dari prefab yang baru dibuat
         currentLineRenderer = currentLineObj.GetComponent<LineRenderer>();
         
-        // Set titik awal
         if(currentLineRenderer != null) {
             currentLineRenderer.positionCount = 2;
-            currentLineRenderer.SetPosition(0, currentStartPin.transform.position);
-            currentLineRenderer.SetPosition(1, currentStartPin.transform.position); // Ujungnya masih sama
+            currentLineRenderer.useWorldSpace = true; 
+            
+            // Posisi Awal
+            Vector3 startPos = currentStartPin.transform.position;
+            startPos.z = -1f; // Paksa muncul di depan kertas
+            
+            currentLineRenderer.SetPosition(0, startPos);
+            currentLineRenderer.SetPosition(1, startPos);
         }
     }
 
@@ -32,17 +36,22 @@ public class LineManager : MonoBehaviour
     {
         if (currentStartPin != null && currentLineObj != null && currentLineRenderer != null)
         {
-            // Ubah posisi mouse dari Screen ke World
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0; // Pastikan Z tetap 0 untuk 2D
+            // PERBAIKAN PENTING DI SINI:
+            // Kita harus memberi tahu jarak Z dari kamera ke kertas (10f)
+            // agar konversi posisi mouse akurat.
+            Vector3 screenPos = Input.mousePosition;
+            screenPos.z = 10f; // Jarak Plane Distance kamera Anda
+
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(screenPos);
+            mousePos.z = -1f; // Paksa Z tetap di depan kertas (-1)
             
-            // Update ujung garis mengikuti mouse
             currentLineRenderer.SetPosition(1, mousePos);
         }
     }
 
     public void FinishDrawing(PinPoint endPin)
     {
+        // Validasi: Pin tujuan ada, dan bukan pin asal
         if (currentStartPin != null && endPin != null && currentStartPin != endPin)
         {
             ConnectionPair newConnection = new ConnectionPair();
@@ -50,11 +59,19 @@ public class LineManager : MonoBehaviour
             newConnection.pinID_B = endPin.pinID;
             currentUserConnections.Add(newConnection);
             
-            // Kunci posisi akhir ke pin tujuan
-            currentLineRenderer.SetPosition(1, endPin.transform.position);
+            // Kunci posisi akhir
+            Vector3 endPos = endPin.transform.position;
+            endPos.z = -1f;
+            
+            currentLineRenderer.SetPosition(1, endPos);
+            
+            // Opsional: Tandai pin sudah terhubung agar tidak ditarik lagi
+            // currentStartPin.isConnected = true;
+            // endPin.isConnected = true;
         }
         else
         {
+            // Batalkan garis jika tidak valid
             Destroy(currentLineObj); 
         }
         
@@ -65,12 +82,10 @@ public class LineManager : MonoBehaviour
 
     public void ClearLines()
     {
-        // Hapus semua garis visual
         foreach (Transform child in lineParent)
         {
             Destroy(child.gameObject);
         }
-        // Kosongkan data
         currentUserConnections.Clear();
         currentStartPin = null;
         currentLineObj = null;
