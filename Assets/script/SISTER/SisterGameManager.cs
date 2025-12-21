@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement; // Tambahan untuk Restart Game
+using UnityEngine.SceneManagement; 
 
 public class SisterGameManager : MonoBehaviour
 {
@@ -12,10 +12,13 @@ public class SisterGameManager : MonoBehaviour
     public TextMeshProUGUI descText;   
     public GameObject nextButton;      
     public GameObject runButton;
-    public TextMeshProUGUI timerText; // (Opsional) Jika ingin menampilkan waktu berjalan
+    public TextMeshProUGUI timerText; // (Opsional)
+    
+    // --- TAMBAHAN BARU ---
+    public GameObject restartButton; // Masukkan Tombol Restart (UI) ke sini di Inspector
+    // ---------------------
 
     [Header("Konfigurasi Level")]
-    // Kita gabungkan Visual (Hierarchy) dan Data (Project) jadi satu paket
     public List<LevelScenario> scenarios; 
 
     private int currentIndex = 0;
@@ -25,20 +28,28 @@ public class SisterGameManager : MonoBehaviour
     [System.Serializable]
     public struct LevelScenario
     {
-        public string name; // Cuma untuk label biar rapi
-        public GameObject levelObject; // Tarik objek Level dari Hierarchy ke sini
-        public SisterLevelData levelData; // Tarik data jawaban dari Project ke sini
+        public string name; 
+        public GameObject levelObject; 
+        public SisterLevelData levelData; 
     }
 
     void Start()
     {
+        // Pastikan tombol restart punya fungsi saat diklik
+        if (restartButton != null)
+        {
+            restartButton.SetActive(false); // Sembunyikan di awal
+            // Menambahkan fungsi klik secara otomatis agar tidak perlu setting di Inspector Button
+            restartButton.GetComponent<Button>().onClick.AddListener(RestartGame);
+        }
+
         StartGame();
     }
 
     public void StartGame()
     {
         currentIndex = 0;
-        startTime = Time.time; // Mulai hitung waktu
+        startTime = Time.time; 
         isGameActive = true;
         LoadScenario(0);
     }
@@ -51,19 +62,14 @@ public class SisterGameManager : MonoBehaviour
 
     public void LoadScenario(int index)
     {
-        // 1. Matikan Level Sebelumnya (jika ada)
+        // 1. Matikan Level Sebelumnya
         if (currentIndex < scenarios.Count && scenarios[currentIndex].levelObject != null)
             scenarios[currentIndex].levelObject.SetActive(false);
 
         currentIndex = index;
 
-        // 2. Cek apakah sudah tamat (Melebihi jumlah level)
-        if (currentIndex >= scenarios.Count)
-        {
-            // Harusnya sudah ditangani di level terakhir (Level 8), tapi untuk jaga-jaga:
-            Debug.Log("Selesai total!");
-            return;
-        }
+        // 2. Cek apakah index di luar batas (Safety check)
+        if (currentIndex >= scenarios.Count) return;
 
         LevelScenario currentScenario = scenarios[currentIndex];
 
@@ -71,14 +77,40 @@ public class SisterGameManager : MonoBehaviour
         if (currentScenario.levelObject != null) 
             currentScenario.levelObject.SetActive(true);
 
-        // 4. Reset UI
+        // --- LOGIKA LEVEL TERAKHIR (SELESAI) ---
+        // Jika ini adalah level terakhir di list scenarios (misal: 08_Selesai)
+        if (currentIndex == scenarios.Count - 1)
+        {
+            // Hitung Waktu Total
+            float totalTime = Time.time - startTime;
+            string minutes = Mathf.Floor(totalTime / 60).ToString("00");
+            string seconds = (totalTime % 60).ToString("00");
+
+            // Cari Teks di object level tersebut (Title/Desc) untuk menampilkan skor
+            TextMeshProUGUI endText = currentScenario.levelObject.GetComponentInChildren<TextMeshProUGUI>();
+            if(endText)
+            {
+                endText.text = $"SELAMAT!\nGame Selesai.\nWaktu Kamu: {minutes}:{seconds}";
+            }
+
+            // Atur Tombol
+            nextButton.SetActive(false); // Sembunyikan Next
+            runButton.SetActive(false);  // Sembunyikan Run
+            intermissionObj.SetActive(false);
+            
+            if(restartButton) restartButton.SetActive(true); // TAMPILKAN TOMBOL RESTART
+            
+            return; // Keluar dari fungsi, tidak perlu load logika puzzle
+        }
+
+        // --- LOGIKA LEVEL BIASA ---
         SisterLevelData data = currentScenario.levelData;
         
         // Reset Teks & Tombol
         if(descText) descText.text = "";
         nextButton.SetActive(false);
+        if(restartButton) restartButton.SetActive(false); // Pastikan restart mati di level biasa
         
-        // Jika Data kosong (misal halaman terakhir/awal banget), anggap text only
         if (data == null) 
         {
             runButton.SetActive(false);
@@ -87,7 +119,6 @@ public class SisterGameManager : MonoBehaviour
             return; 
         }
 
-        // Logic Tampilan UI (Text Only vs Puzzle)
         if (data.isTextOnly)
         {
             runButton.SetActive(false);
@@ -118,7 +149,6 @@ public class SisterGameManager : MonoBehaviour
         }
     }
 
-    // Fungsi Cek Jawaban (Sudah diperbaiki logikanya)
     bool CheckAnswer(SisterLevelData data)
     {
         LineManager lineMgr = FindObjectOfType<LineManager>();
@@ -127,17 +157,14 @@ public class SisterGameManager : MonoBehaviour
         List<ConnectionPair> userConns = lineMgr.currentUserConnections;
         List<ConnectionPair> correctConns = data.correctConnections;
 
-        // 1. Jumlah garis harus sama
         if (userConns.Count != correctConns.Count) return false;
 
-        // 2. Cek setiap kunci jawaban apakah ada di list user
         int correctCount = 0;
         foreach (var correct in correctConns)
         {
             bool found = false;
             foreach (var user in userConns)
             {
-                // Cek bolak balik (A ke B atau B ke A dianggap sama)
                 if ((user.pinID_A == correct.pinID_A && user.pinID_B == correct.pinID_B) ||
                     (user.pinID_A == correct.pinID_B && user.pinID_B == correct.pinID_A))
                 {
@@ -153,36 +180,14 @@ public class SisterGameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        // Bersihkan garis-garis lama sebelum pindah level
         LineManager lineMgr = FindObjectOfType<LineManager>();
         if (lineMgr) lineMgr.ClearLines();
 
-        // Jika ini level terakhir (Screen 8), jangan load next, tapi tampilkan skor
-        if (currentIndex == scenarios.Count - 1)
-        {
-            RestartGame(); // Atau kembali ke menu utama
-        }
-        else
+        // Pindah ke level selanjutnya
+        // Jika belum level terakhir, load index+1
+        if (currentIndex < scenarios.Count - 1)
         {
             LoadScenario(currentIndex + 1);
-            
-            // Khusus Logic untuk Level 8 (Halaman Akhir)
-            // Jika level selanjutnya adalah index terakhir, hitung waktu
-            if (currentIndex == scenarios.Count - 1)
-            {
-                float totalTime = Time.time - startTime;
-                
-                // Cari teks di objek level terakhir untuk menampilkan waktu
-                // Asumsi di Level 8 ada component TextMeshProUGUI
-                TextMeshProUGUI endText = scenarios[currentIndex].levelObject.GetComponentInChildren<TextMeshProUGUI>();
-                if(endText)
-                {
-                    // Format waktu menjadi Menit:Detik
-                    string minutes = Mathf.Floor(totalTime / 60).ToString("00");
-                    string seconds = (totalTime % 60).ToString("00");
-                    endText.text = $"SELAMAT!\nGame Selesai.\nWaktu: {minutes}:{seconds}";
-                }
-            }
         }
     }
 
